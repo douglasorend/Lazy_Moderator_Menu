@@ -90,7 +90,8 @@ function LazyModerator_Moderation_Hook(&$moderation_areas)
 	$cached[$outer_last]['is_last'] = true;
 
 	// Cache the built moderator menu:
-	echo serialize($cached);
+	$func = function_exists('safe_serialize') ? 'safe_serialize' : 'serialize';
+	echo @$func($cached);
 	exit;
 }
 
@@ -111,11 +112,9 @@ function LazyModerator_Menu_Buttons(&$areas)
 	{
 		// Force the moderation code to build our new moderation menu:
 		$contents = @file_get_contents($scripturl . '?action=moderate;area=lazymoderator_cpl;u=' . $user_info['id']);
-		if (substr($contents, 0, 2) == 'a:')
-		{
-			$cached = @unserialize($contents);
-			cache_put_data('lazymoderator_' . $user_info['id'], $cached, 86400);
-		}
+		$func = function_exists('safe_unserialize') ? 'safe_unserialize' : 'unserialize';
+		$cached = @$func($cached);
+		cache_put_data('lazymoderator_' . $user_info['id'], $cached, 86400);
 	}
 	if (is_array($cached))
 		$areas['moderate']['sub_buttons'] = $cached;

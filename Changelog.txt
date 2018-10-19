@@ -1,3 +1,6 @@
+v1.1 - February 26th, 2018
+o Now uses [b]safe_serialize[/b]/[b]safe_unserialize[/b] functions when available.
+
 v1.0.1 - December 31st, 2016
 o Fixed the SMF bug fix so it is compatible with 2.0.13 upgrade.
 

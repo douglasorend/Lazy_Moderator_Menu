@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+<id>dougiefresh:LazyModerator</id>
+<name>Lazy Moderator Menu</name>
+<version>1.1</version>
+
+<file name="$sourcedir/ModerationCenter.php">
+	<operation>
+		<search position="after"><![CDATA[$context['can_moderate_boards'] = $user_info['mod_cache']['bq'] != '0=1';]]></search>
+		<add><![CDATA[$context['get_moderate_actions'] = isset($_GET['area']) && $_GET['area'] == 'lazymoderator_cpl' && isset($_GET['u']);
+	]]></add>
+	</operation>
+	<operation>
+		<search position="after"><![CDATA[!$context['can_moderate_boards'] && !$context['can_moderate_groups'] && !$context['can_moderate_approvals']]]></search>
+		<add><![CDATA[!$context['get_moderate_actions'] && ]]></add>
+	</operation>
+	<operation>
+		<search position="after"><![CDATA[// I don't know where we're going - I don't know where we've been...]]></search>
+		<add><![CDATA[// Call the integration hook:
+	call_integration_hook('integrate_moderation_areas', array(&$moderation_areas));
+
+	]]></add>
+	</operation>
+</file>
+</modification>

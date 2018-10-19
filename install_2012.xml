@@ -3,7 +3,7 @@
 <modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
 <id>dougiefresh:LazyModerator</id>
 <name>Lazy Moderator Menu</name>
-<version>1.0.1</version>
+<version>1.1</version>
 
 <file name="$sourcedir/Subs.php">
 	<operation error="ignore">
