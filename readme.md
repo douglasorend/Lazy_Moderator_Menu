@@ -1,24 +1,27 @@
-[hr]
-[center][color=red][size=16pt][b]LAZY MODERATOR MENU v1.2[/b][/size][/color]
-[url=http://www.simplemachines.org/community/index.php?action=profile;u=253913][b]By Dougiefresh[/b][/url] -> [url=http://custom.simplemachines.org/mods/index.php?mod=4123]Link to Mod[/url]
-[/center]
-[hr]
+-------
 
-[color=blue][b][size=12pt][u]Introduction[/u][/size][/b][/color]
+# LAZY MODERATOR MENU v1.2
+
+[**By Dougiefresh**](http://www.simplemachines.org/community/index.php?action=profile;u=253913) -> [Link to Mod](http://custom.simplemachines.org/mods/index.php?mod=4123)
+
+-------
+
+## Introduction
 This mod alters the main menu's Moderate menu to bring all the functionality of the moderation menu to the main forum's menu bar.
 
-This mod was inspired by tip provided by [url=http://www.simplemachines.org/community/index.php?action=profile;u=152526]snow[/url] in [url=http://www.simplemachines.org/community/index.php?topic=400767.msg2785613#msg2785613]Lazy Admin Menu[/url] in order to make it easier for the admin to navigate straight to where they want to go.
+This mod was inspired by tip provided by [snow](http://www.simplemachines.org/community/index.php?action=profile;u=152526) in [Lazy Admin Menu](http://www.simplemachines.org/community/index.php?topic=400767.msg2785613#msg2785613) in order to make it easier for the admin to navigate straight to where they want to go.
 
 The only difference is that this mod built dynamically, so that any changes to the admin menu are shown immediately.
 
-[color=blue][b][size=12pt][u]Compatibility Notes[/u][/size][/b][/color]
+## Compatibility Notes
 This mod was tested on SMF 2.0.12, but should work on any version of SMF 2.0.x.  SMF 1.x and SMF 2.1 is not and will not be supported.
 
-[color=blue][b][size=12pt][u]Changelog[/u][/size][/b][/color]
-The changelog can be viewed at [url=http://www.xptsp.com/board/free-modifications/lazy-moderator-menu/?tab=1]XPtsp.com[/url].
+## Changelog
+The changelog can be viewed at [XPtsp.com](http://www.xptsp.com/board/free-modifications/lazy-moderator-menu/?tab=1).
 
-[color=blue][b][size=12pt][u]License[/u][/size][/b][/color]
+## License
 Copyright (c) 2016 - 2018, Douglas Orend
+
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
