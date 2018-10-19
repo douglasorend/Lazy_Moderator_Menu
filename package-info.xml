@@ -3,13 +3,14 @@
 <package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
 	<id>dougiefresh:LazyModerator</id>
 	<name>Lazy Moderator Menu</name>
-	<version>1.0</version>
+	<version>1.0.1</version>
 	<type>modification</type>
 
 	<install for="2.0 - 2.0.99">
 		<readme type="file" parsebbc="true">readme.txt</readme>
 		<code>add_remove_hooks.php</code>
 		<modification>install.xml</modification>
+		<modification>install_2012.xml</modification>
 		<require-file name="Subs-LazyModerator.php" destination="$sourcedir" />
 	</install>
 	<uninstall for="2.0 - 2.0.99">

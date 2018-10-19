@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+<id>dougiefresh:LazyModerator</id>
+<name>Lazy Moderator Menu</name>
+<version>1.0.1</version>
+
+<file name="$sourcedir/Subs.php">
+	<operation error="ignore">
+		<search position="replace"><![CDATA[{
+	// Input exceeds 4096.
+	if(strlen($str) > 4096)
+		return false;
+
+	// Input  is not a string.]]></search>
+		<add><![CDATA[{
+	// Input  is not a string.]]></add>
+	</operation>
+</file>
+</modification>

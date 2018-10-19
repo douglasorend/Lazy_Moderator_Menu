@@ -1,2 +1,5 @@
+v1.0.1 - December 31st, 2016
+o Fixed the SMF bug fix so it is compatible with 2.0.13 upgrade.
+
 v1.0 - November 2nd, 2016
 o Initial Release

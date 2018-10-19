@@ -3,7 +3,7 @@
 <modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
 <id>dougiefresh:LazyModerator</id>
 <name>Lazy Moderator Menu</name>
-<version>1.0</version>
+<version>1.0.1</version>
 
 <file name="$sourcedir/ModerationCenter.php">
 	<operation>
@@ -21,22 +21,6 @@
 	call_integration_hook('integrate_moderation_areas', array(&$moderation_areas));
 
 	]]></add>
-	</operation>
-</file>
-<file name="$sourcedir/Subs.php">
-	<operation error="ignore">
-		<search position="replace"><![CDATA[{
-	// Input exceeds 4096.
-	if(strlen($str) > 4096)
-		return false;
-]]></search>
-		<add><![CDATA[{
-/*
-	// Input exceeds 4096.
-	if(strlen($str) > 4096)
-		return false;
-*/
-]]></add>
 	</operation>
 </file>
 </modification>
